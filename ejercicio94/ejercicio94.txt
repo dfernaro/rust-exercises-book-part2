@@ -1,0 +1,3 @@
+Nombre: Marina
+Edad: 29
+Especialidad: MARKETING
