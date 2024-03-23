@@ -1,14 +1,24 @@
 #[derive(Debug)]
-enum Dias {
-    Lunes,
-    Martes,
-    Miercoles,
-    Jueves,
-    Viernes,
-    Sabado,
-    Domingo,
+enum Color {
+    Rojo,
+    Verde,
+    Amarillo,
+}
+
+struct Persona {
+    nombre: String,
+    edad: u32,
+    color: Color,
 }
 
 fn main() {
-    println!("Día elegido: {:?}", Dias::Jueves);
+    let persona = Persona {
+        nombre: String::from("David"),
+        edad: 18,
+        color: Color::Amarillo,
+    };
+
+    println!("Nombre: {}", persona.nombre);
+    println!("Edad: {}", persona.edad);
+    println!("Color: {:?}", persona.color);
 }
